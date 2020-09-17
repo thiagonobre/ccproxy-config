@@ -14,3 +14,6 @@ Then set up your proxy configuration setup script to the URL http://localhost:50
 Then save
 
 now you must certify that ccproxy is running and open your store in incognito mode
+
+
+### Thanks
