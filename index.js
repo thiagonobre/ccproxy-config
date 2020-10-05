@@ -5,7 +5,7 @@ const PORT = process.env.PORT || 5000
 express()
 	.get('/ccproxyConfig', (req, res) => {
 		function FindProxyForURL(url, host) {
-			if (host.indexOf("ccstore") > -1) {
+			if (host.indexOf("ccadmin") > -1) {
 				return "PROXY 127.0.0.1:8088";
 			} else {
 				return "DIRECT";
