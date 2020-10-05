@@ -6,7 +6,7 @@ express()
 	.get('/ccproxyConfig', (req, res) => {
 		function FindProxyForURL(url, host) {
 			if (host.indexOf("ccadmin") > -1) {
-				return "PROXY 127.0.0.1:8088";
+				return "PROXY 127.0.0.1:8088;DIRECT";
 			} else {
 				return "DIRECT";
 			}
